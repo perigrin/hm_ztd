@@ -1,0 +1,31 @@
+body {
+	background: white;
+	color: black;
+	font-family: sans-serif, monospace;
+	font-size: 8pt;
+	padding: 1ex;
+}
+
+h1 { 
+	color: yellow;
+	font-size: 28pt;
+	-webkit-text-stroke: 2px black;
+}
+
+ul { 
+	font-family: monospace;
+	list-style-type: none;
+	padding: 0;
+}
+li { 
+	padding: .5ex;
+    -webkit-border-radius: 5px; 
+}
+
+li:nth-child(even) {
+	background: yellow;
+}
+
+li:hover { 
+	background: silver;
+}
