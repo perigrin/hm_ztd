@@ -39,7 +39,8 @@ Class('App', {
             var app = this;
             var login = this.getLogin();
             login.getId().show();
-            $('#loginButton').click(function() {
+            $('#loginForm').submit(function() {
+
                 var address = $('#address').val();
                 var password = $('#password').val();
 
@@ -49,6 +50,7 @@ Class('App', {
                 }));
                 app.hideAllPages();
                 app.showTaskList();
+                return false;
             })
         },
         showTaskList: function() {
